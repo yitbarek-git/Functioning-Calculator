@@ -1,12 +1,11 @@
 body{
     margin: 0;
     display: flex;
-    justify-content: center;   /* horizontal center */
-    align-items: center;       /* vertical center */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-/* Calculator box */
 #calculator{
     font-family: arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
@@ -16,7 +15,6 @@ body{
     overflow: hidden;
 }
 
-/* Display */
 #display{
     width: 100%;
     text-align: left;
@@ -28,7 +26,6 @@ body{
     box-sizing: border-box;
 }
 
-/* Buttons grid */
 #buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -36,10 +33,9 @@ body{
     padding: 15px;
 }
 
-/* Buttons */
 button {
     width: 100%;
-    aspect-ratio: 1;  /* keeps buttons round */
+    aspect-ratio: 1;
     border-radius: 50%;
     border: none;
     background-color: hsl(0, 0%, 10%);
@@ -49,22 +45,23 @@ button {
     cursor: pointer;
 }
 
-/* Hover effects */
 button:hover{
     background-color: hsl(0, 0%, 30%);  
 }
+
 button:active{
-    background-color: hsl(0, 0%, 50%);  
+    background-color: hsl(0, 63%, 51%);  
 }
 
-/* Operator buttons */
 .operator-btn{
-    background-color: hsl(63, 95%, 50%);
+    background-color: hsl(63, 88%, 52%);
     color: black;
 }
+
 .operator-btn:hover{
-    background-color: hsl(63, 95%, 80%);
+    background-color: hsl(63, 95%, 90%);
 }
+
 .operator-btn:active{
     background-color: hsl(63, 95%, 100%);
 }
