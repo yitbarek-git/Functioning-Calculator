@@ -9,7 +9,7 @@
 <body>
 
 <div id="calculator">
-    <input id="display" type="text" readonly>
+    <input id="display" type="text" readonly >
 
     <div id="buttons">
         <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
@@ -33,9 +33,14 @@
         <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
 
         <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('00')">00</button>
+        
 
+        
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('/100')" class="operator-btn">%</button>
         <button onclick="calculate()">=</button>
+
 
         <button onclick="clearDisplay()" class="operator-btn">C</button>
         <button onclick="deleteLast()" class="operator-btn">⌫</button>
